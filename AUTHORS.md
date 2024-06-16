@@ -1,0 +1,3 @@
+- Anders Källberg (Maintainer)
+- Eva Nittinger, Rocío Mercado, Christian Tyrchan and Stefano Ribes guided the project
+- Stefano Ribes provided "curated_dataset.csv"
