@@ -6,16 +6,24 @@
 
 A machine learning tool for identifying the substructures of PROTACs. Based on Pytorch and graph neural networks, investigates multiple architectures to predict the substructures. The best architecture predicts the boundary bonds / links / edges between the substructures. This repository also contains notebooks to create training, validation and test sets, as well as a notebook to run a hyperparameter optimization. A detailed description of the model architectures will be available through the master's thesis *Machine Learning for Structural Predictions of PROTACs*.
 
+
 The three architectures which were investigated are outlined here:
 
-**Node prediction** - Predicts the individual atoms/nodes of the molecule to be one of the three classes: warhead, linker, or E3-ligand
+**Node prediction**.
+Predicts the individual atoms/nodes of the molecule to be one of the three classes: warhead, linker, or E3-ligand. The three classes are processed as subgraphs and translated into three SMILES.
+
 ![node_pred_architecture](https://github.com/AndersKallberg/PROTAC_splitter/assets/143714806/409d63b8-17f1-47f1-9ffe-4cc9046b46dc)
 
-**Boundary node prediction** - Predicts the individual atoms/nodes of the molecule to be one of the three classes: Warhead-Linker boundary node, non-boundary node, E3-Linker boundary node.
+**Boundary node prediction**.
+Predicts the individual atoms/nodes of the molecule to be one of the three classes: Warhead-Linker boundary node, non-boundary node, E3-Linker boundary node. The predicted boundary nodes are then processed into three subgraphs which are processed into three SMILES.
+
 ![boundary_node_architecture](https://github.com/AndersKallberg/PROTAC_splitter/assets/143714806/270992f8-e13a-4151-b448-cbcad2d8490e)
 
-**Boundary bond prediction** - Predicts the individual bonds/links of the molecule to be one of the three classes: Warhead-Linker boundary bond, non-boundary bond, E3-Linker boundary bond. The atoms belonging to a splittable bond were fed into a feed-forward networks to predict the location and type of bond. Splittable bonds were defined as non-ring bonds, and bonds that do not connect a single atom.
+**Boundary bond prediction**.
+Predicts the individual bonds/links of the molecule to be one of the three classes: Warhead-Linker boundary bond, non-boundary bond, E3-Linker boundary bond. The atoms belonging to a splittable bond were fed into a feed-forward networks to predict the location and type of bond. Splittable bonds were defined as non-ring bonds, and bonds that do not connect a single atom. The predicted boundary bonds are then processed into three subgraphs which are processed into three SMILES.
+
 ![boundary_bond_architecture](https://github.com/AndersKallberg/PROTAC_splitter/assets/143714806/3a2c8658-01d8-4b54-9bd5-2d3f9be10ce5)
+
 
 
 ## Dependencies
