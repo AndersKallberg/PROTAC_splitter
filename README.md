@@ -4,7 +4,7 @@
 
 ## Project description
 
-A machine learning tool for identifying the substructures of PROTACs. Based on Pytorch and graph neural networks, investigates multiple architectures to predict the substructures. The best architecture predicts the boundary bonds / links / edges between the substructures. This repository also contains notebooks to create training, validation and test sets, as well as a notebook to run a hyperparameter optimization. A detailed description of the model architectures will be available through the master's thesis *Machine Learning for Structural Predictions of PROTACs*.
+A machine learning tool for identifying the substructures of PROTACs. Based on Pytorch and graph neural networks, investigates multiple architectures to predict the substructures. The best architecture predicts the boundary bonds / links / edges between the substructures. This repository also contains notebooks to create training, validation and test sets, as well as a notebook to run a hyperparameter optimization. A detailed description of the model architectures will be available through the master's thesis *[Machine Learning for Structural Predictions of PROTACs](https://odr.chalmers.se/items/f120c9ba-4e26-4f19-bd2e-6685ac2bd5cf)*.
 
 
 The three architectures which were investigated are outlined here:
