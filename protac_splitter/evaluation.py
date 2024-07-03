@@ -1,0 +1,1 @@
+""" Evaluation functions for the protac_splitter package. They need to be generic to accomodate predictions coming from different models. """
